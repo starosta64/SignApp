@@ -88,7 +88,7 @@
 		CE8F3D86266A4CAF00CC72A8 /* SignApp */ = {
 			isa = PBXGroup;
 			children = (
-				CE8F3D87266A4CAF00CC72A8 /* SignAppApp.swift */,
+				CE8F3D90266A4CB000CC72A8 /* Info.plist */,
 				CE8F3DBB266BB26800CC72A8 /* View */,
 				CE8F3DBF266BB2DC00CC72A8 /* Common */,
 				CE8F3DBD266BB28800CC72A8 /* Object */,
@@ -127,9 +127,9 @@
 		CE8F3DBF266BB2DC00CC72A8 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				CE8F3D87266A4CAF00CC72A8 /* SignAppApp.swift */,
 				CE8F3DAD266B9C5200CC72A8 /* Launch Screen.storyboard */,
 				CE8F3D8B266A4CB000CC72A8 /* Assets.xcassets */,
-				CE8F3D90266A4CB000CC72A8 /* Info.plist */,
 			);
 			path = Common;
 			sourceTree = "<group>";

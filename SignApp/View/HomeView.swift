@@ -27,7 +27,7 @@ struct HomeView: View {
                        }
                 .border(Color.black)
             })
-            
+            Spacer()
         }
         
     }
