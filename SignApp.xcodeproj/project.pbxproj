@@ -17,6 +17,7 @@
 		CE8F3DAE266B9C5200CC72A8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8F3DAD266B9C5200CC72A8 /* Launch Screen.storyboard */; };
 		CE8F3DB1266BA0B900CC72A8 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F3DB0266BA0B900CC72A8 /* RootView.swift */; };
 		CE8F3DB5266BA41300CC72A8 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F3DB4266BA41300CC72A8 /* MainView.swift */; };
+		CE8F3DB9266BACBF00CC72A8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F3DB8266BACBF00CC72A8 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		CE8F3DAD266B9C5200CC72A8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		CE8F3DB0266BA0B900CC72A8 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		CE8F3DB4266BA41300CC72A8 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		CE8F3DB8266BACBF00CC72A8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		DCBBE406121AAF3D253DD988 /* Pods_SignApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -87,13 +89,9 @@
 			isa = PBXGroup;
 			children = (
 				CE8F3D87266A4CAF00CC72A8 /* SignAppApp.swift */,
-				CE8F3D89266A4CAF00CC72A8 /* SingInView.swift */,
-				CE8F3DAD266B9C5200CC72A8 /* Launch Screen.storyboard */,
-				CE8F3DB0266BA0B900CC72A8 /* RootView.swift */,
-				CE8F3DB4266BA41300CC72A8 /* MainView.swift */,
-				CE8F3DAA266B8FF600CC72A8 /* UserObject.swift */,
-				CE8F3D8B266A4CB000CC72A8 /* Assets.xcassets */,
-				CE8F3D90266A4CB000CC72A8 /* Info.plist */,
+				CE8F3DBB266BB26800CC72A8 /* View */,
+				CE8F3DBF266BB2DC00CC72A8 /* Common */,
+				CE8F3DBD266BB28800CC72A8 /* Object */,
 				CE8F3D8D266A4CB000CC72A8 /* Preview Content */,
 			);
 			path = SignApp;
@@ -105,6 +103,35 @@
 				CE8F3D8E266A4CB000CC72A8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE8F3DBB266BB26800CC72A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE8F3D89266A4CAF00CC72A8 /* SingInView.swift */,
+				CE8F3DB0266BA0B900CC72A8 /* RootView.swift */,
+				CE8F3DB4266BA41300CC72A8 /* MainView.swift */,
+				CE8F3DB8266BACBF00CC72A8 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE8F3DBD266BB28800CC72A8 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				CE8F3DAA266B8FF600CC72A8 /* UserObject.swift */,
+			);
+			path = Object;
+			sourceTree = "<group>";
+		};
+		CE8F3DBF266BB2DC00CC72A8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CE8F3DAD266B9C5200CC72A8 /* Launch Screen.storyboard */,
+				CE8F3D8B266A4CB000CC72A8 /* Assets.xcassets */,
+				CE8F3D90266A4CB000CC72A8 /* Info.plist */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +257,7 @@
 				CE8F3DB1266BA0B900CC72A8 /* RootView.swift in Sources */,
 				CE8F3D8A266A4CAF00CC72A8 /* SingInView.swift in Sources */,
 				CE8F3D88266A4CAF00CC72A8 /* SignAppApp.swift in Sources */,
+				CE8F3DB9266BACBF00CC72A8 /* HomeView.swift in Sources */,
 				CE8F3DB5266BA41300CC72A8 /* MainView.swift in Sources */,
 				CE8F3DAB266B8FF600CC72A8 /* UserObject.swift in Sources */,
 			);
