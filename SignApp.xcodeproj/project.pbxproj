@@ -3,23 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87FFB3073C2587831D22EBB3 /* Pods_SignApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCBBE406121AAF3D253DD988 /* Pods_SignApp.framework */; };
 		CE8F3D88266A4CAF00CC72A8 /* SignAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F3D87266A4CAF00CC72A8 /* SignAppApp.swift */; };
 		CE8F3D8A266A4CAF00CC72A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F3D89266A4CAF00CC72A8 /* ContentView.swift */; };
 		CE8F3D8C266A4CB000CC72A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8F3D8B266A4CB000CC72A8 /* Assets.xcassets */; };
 		CE8F3D8F266A4CB000CC72A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8F3D8E266A4CB000CC72A8 /* Preview Assets.xcassets */; };
+		CE8F3D9F266B65A000CC72A8 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = CE8F3D9E266B65A000CC72A8 /* SwiftyJSON */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84E57F71721BF8F27A201132 /* Pods-SignApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignApp.debug.xcconfig"; path = "Target Support Files/Pods-SignApp/Pods-SignApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A8A4A0AE90B07A80FD937C8A /* Pods-SignApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignApp.release.xcconfig"; path = "Target Support Files/Pods-SignApp/Pods-SignApp.release.xcconfig"; sourceTree = "<group>"; };
 		CE8F3D84266A4CAF00CC72A8 /* SignApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8F3D87266A4CAF00CC72A8 /* SignAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignAppApp.swift; sourceTree = "<group>"; };
 		CE8F3D89266A4CAF00CC72A8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE8F3D8B266A4CB000CC72A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE8F3D8E266A4CB000CC72A8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE8F3D90266A4CB000CC72A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCBBE406121AAF3D253DD988 /* Pods_SignApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +32,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8F3D9F266B65A000CC72A8 /* SwiftyJSON in Frameworks */,
+				87FFB3073C2587831D22EBB3 /* Pods_SignApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		86BBEC92EEA49C31D28B4993 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84E57F71721BF8F27A201132 /* Pods-SignApp.debug.xcconfig */,
+				A8A4A0AE90B07A80FD937C8A /* Pods-SignApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A8ABAC932A0066FBECD6B7A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCBBE406121AAF3D253DD988 /* Pods_SignApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE8F3D7B266A4CAF00CC72A8 = {
 			isa = PBXGroup;
 			children = (
 				CE8F3D86266A4CAF00CC72A8 /* SignApp */,
 				CE8F3D85266A4CAF00CC72A8 /* Products */,
+				86BBEC92EEA49C31D28B4993 /* Pods */,
+				A8ABAC932A0066FBECD6B7A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,15 +102,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE8F3D93266A4CB000CC72A8 /* Build configuration list for PBXNativeTarget "SignApp" */;
 			buildPhases = (
+				EBB1A83111D6510444EFAC39 /* [CP] Check Pods Manifest.lock */,
 				CE8F3D80266A4CAF00CC72A8 /* Sources */,
 				CE8F3D81266A4CAF00CC72A8 /* Frameworks */,
 				CE8F3D82266A4CAF00CC72A8 /* Resources */,
+				288790EE0B57E61E29F27516 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SignApp;
+			packageProductDependencies = (
+				CE8F3D9E266B65A000CC72A8 /* SwiftyJSON */,
+			);
 			productName = SignApp;
 			productReference = CE8F3D84266A4CAF00CC72A8 /* SignApp.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +143,9 @@
 				Base,
 			);
 			mainGroup = CE8F3D7B266A4CAF00CC72A8;
+			packageReferences = (
+				CE8F3D9D266B659F00CC72A8 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = CE8F3D85266A4CAF00CC72A8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -132,6 +166,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		288790EE0B57E61E29F27516 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SignApp/Pods-SignApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SignApp/Pods-SignApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SignApp/Pods-SignApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBB1A83111D6510444EFAC39 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SignApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE8F3D80266A4CAF00CC72A8 /* Sources */ = {
@@ -264,6 +340,7 @@
 		};
 		CE8F3D94266A4CB000CC72A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84E57F71721BF8F27A201132 /* Pods-SignApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -285,6 +362,7 @@
 		};
 		CE8F3D95266A4CB000CC72A8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8A4A0AE90B07A80FD937C8A /* Pods-SignApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -326,6 +404,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE8F3D9D266B659F00CC72A8 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE8F3D9E266B65A000CC72A8 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE8F3D9D266B659F00CC72A8 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE8F3D7C266A4CAF00CC72A8 /* Project object */;
 }

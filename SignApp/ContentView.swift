@@ -68,23 +68,27 @@ struct ContentView: View {
                     
                     
                 }, label: {
-                    Text("SIGN IN")
+                    Text("SIGN APP")
                         
-                        .frame(width: 370, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .frame(width: 350, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         .background(Color(.blue))
-                        .cornerRadius(70)
+                        .cornerRadius(100)
                         .border(Color .white, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
                         .padding()
                     
                 })
+                HStack {
                 
                 
-                
-                Text("Already have an account? Login")
+                Text("Already have an account?")
+                    
                     .foregroundColor(.gray)
+                Text("Login")
+                    .foregroundColor(.blue)
+                    
                 
                 
-                
+                }
                 
                 
             }
