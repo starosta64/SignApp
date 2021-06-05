@@ -31,7 +31,7 @@ struct ContentView: View {
                     
                     Image(systemName: "envelope")
                         .padding(.leading)
-                    
+                        .foregroundColor(.gray)
                     
                     
                     TextField("name@email.com", text: $mail)
@@ -55,10 +55,12 @@ struct ContentView: View {
                     
                     
                     Image(systemName: "lock")
+                        .foregroundColor(.gray)
+                        
                         .padding(.leading)
                     TextField("********", text: $pass)
                         .frame(width: 320, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)}
-                    .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color(UIColor.blue).opacity(1), lineWidth: 1))
+                    .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color(UIColor.blue).opacity(1), lineWidth: 2))
                     
                     
                 
@@ -79,6 +81,7 @@ struct ContentView: View {
                 
                 
                 Text("Already have an account? Login")
+                    .foregroundColor(.gray)
                 
                 
                 
