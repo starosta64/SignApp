@@ -6,11 +6,15 @@
 //
 
 import SwiftUI
+import Alamofire
+import SwiftyJSON
 
-struct ContentView: View {
-    @State var pass = ""
-    @State var mail = ""
-    @State var nameStr = ""
+struct SingInView: View {
+    @State var password = ""
+    @State var email = ""
+    @ObservedObject var userObject = UserObject()
+    @Binding var page : Int
+    
     
     var body: some View {
         VStack {
@@ -34,8 +38,12 @@ struct ContentView: View {
                         .foregroundColor(.gray)
                     
                     
-                    TextField("name@email.com", text: $mail)
+                    TextField("name@email.com", text: $email)
                         .frame(width: 320, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
+                        .disableAutocorrection(true)
+                    
+                        
                     
                 }.overlay(RoundedRectangle(cornerRadius: 8).stroke(Color(UIColor.blue).opacity(1), lineWidth: 1))
                 //.frame(width: 350, height: 50, alignment: .center)
@@ -58,13 +66,17 @@ struct ContentView: View {
                         .foregroundColor(.gray)
                         
                         .padding(.leading)
-                    TextField("********", text: $pass)
+                    SecureField("********", text: $password)
                         .frame(width: 320, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)}
                     .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color(UIColor.blue).opacity(1), lineWidth: 2))
                     
                     
                 
                 Button(action: {
+                    userObject.login(email: email, password: password)
+                    page = 2
+                        
+                    
                     
                     
                 }, label: {
@@ -98,7 +110,7 @@ struct ContentView: View {
 }
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        SingInView(page: .constant(1))
     }
 }
 

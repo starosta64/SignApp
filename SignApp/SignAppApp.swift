@@ -11,7 +11,7 @@ import SwiftUI
 struct SignAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
         }
     }
 }
